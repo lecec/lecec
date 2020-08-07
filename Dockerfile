@@ -9,4 +9,4 @@ FROM bigrocs/alpine:ca-data
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 COPY --from=builder /go/src/github.com/lecec/lecec/bin/lecec /usr/local/bin/
 ENTRYPOINT ["lecec"]
-EXPOSE 1080
+EXPOSE 8080
